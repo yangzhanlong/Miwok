@@ -8,9 +8,9 @@ public class Word {
     private String mMiworkTranslation;
     private String mDefaultTranslation;
 
-    public Word(String miworkTranslation, String defaultTranslation) {
-        mMiworkTranslation = miworkTranslation;
+    public Word(String defaultTranslation, String miworkTranslation) {
         mDefaultTranslation = defaultTranslation;
+        mMiworkTranslation = miworkTranslation;
     }
 
     public String getmMiworkTranslation() {
