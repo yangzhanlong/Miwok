@@ -9,6 +9,7 @@ import android.widget.ImageView;
 public class Word {
     private String mMiworkTranslation;
     private String mDefaultTranslation;
+    private int mAudioResourceID;
 
     /** Image resource ID for the word */
     private int mImageResourceID = NO_IMAGE_PROVIDED;
@@ -17,15 +18,17 @@ public class Word {
     private static final int NO_IMAGE_PROVIDED = -1;
 
     // 因为PhraseAcitity没有图片，只需要两个参数的构造函数
-    public Word(String defaultTranslation, String miworkTranslation) {
+    public Word(String defaultTranslation, String miworkTranslation, int audioResourceID) {
         mDefaultTranslation = defaultTranslation;
         mMiworkTranslation = miworkTranslation;
+        mAudioResourceID = audioResourceID;
     }
 
-    public Word(String defaultTranslation, String miworkTranslation, int imageResourceID) {
+    public Word(String defaultTranslation, String miworkTranslation, int imageResourceID, int audioResourceID) {
         mDefaultTranslation = defaultTranslation;
         mMiworkTranslation = miworkTranslation;
         mImageResourceID = imageResourceID;
+        mAudioResourceID = audioResourceID;
     }
 
     public String getmMiworkTranslation() {
@@ -38,6 +41,10 @@ public class Word {
 
     public int getImageResourceID() {
         return mImageResourceID;
+    }
+
+    public int getmAudioResourceID() {
+        return mAudioResourceID;
     }
 
     public boolean hasImage() {
