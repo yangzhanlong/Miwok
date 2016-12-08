@@ -5,8 +5,7 @@ import android.content.Context;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.app.Fragment;
-import android.util.Log;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -113,7 +112,6 @@ public class NumbersFragment extends Fragment {
                 releaseMediaPlayer();
 
                 int audioResurceID = words.get(position).getmAudioResourceID();
-                Log.v("NumbersActivity", "Current word: " + words.get(position));
 
                 // Request audio focus so in order to play the audio file. The app needs to play a
                 // short audio file, so we will request audio focus with a short amount of time
