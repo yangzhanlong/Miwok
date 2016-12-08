@@ -26,7 +26,7 @@
     <string name="category_numbers">Numbers</string>
 
     <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
-    <string name="category_family">Family Members</string>
+    <string name="category_family">Family</string>
     <string name="title_activity_phrase">Phrase</string>
 
     <string name="hello_world">Hello world!</string>
@@ -34,4 +34,5 @@
     <string name="title_activity_numbers">NumBers</string>
     <string name="title_activity_family">Family</string>
     <string name="title_activity_colors">Colors</string>
+
 </resources>
